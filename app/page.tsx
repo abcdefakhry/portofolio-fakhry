@@ -5,7 +5,7 @@ import { motion, useMotionValue, useSpring, AnimatePresence } from "framer-motio
 
 // --- 1. DATA ---
 const projects = [
-  { id: 1, title: "Portofolio", category: "WEB DEVELOPMENT", description: "Website portofolio pribadi interaktif dan responsif yang dibangun menggunakan Next.js, Framer Motion, dan Tailwind CSS.", image: "/portofolio2.jpg", link: "https://fakhryzacky.vercel.app/", github: "https://github.com/abcdefakhry/portofolio-fakhry" },
+  { id: 1, title: "Portofolio", category: "WEB DEVELOPMENT", description: "Website portofolio pribadi interaktif dan responsif yang dibangun menggunakan Next.js, Framer Motion, dan Tailwind CSS.", image: "/portofolio2.jpg", link: "https://fakhry.my.id", github: "https://github.com/abcdefakhry/portofolio-fakhry" },
   { id: 5, title: "FitBot", category: "WEB DEVELOPMENT", description: "Chatbot kesehatan berbasis web untuk konsultasi kebugaran dan panduan latihan fisik.", image: "/fitbot.jpg", link: "https://abcdefakhry.github.io/FitBot/", github: "https://github.com/abcdefakhry/FitBot" },
   { id: 4, title: "Web Selempang UMKM", category: "WEB DEVELOPMENT", description: "Website katalog dan kustomisasi selempang wisuda premium untuk usaha mikro (UMKM) Dins Selempang.", image: "/web-selempang-umkm.jpg", link: "https://tinyurl.com/dinsselempang", github: "https://github.com/WEB-PORTOFOLIO-SELEMPANG/PORTO-SELEMPANG" },
 ];
