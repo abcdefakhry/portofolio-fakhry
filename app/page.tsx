@@ -15,6 +15,7 @@ const experiences = [
   { id: 2, role: "Software Engineer Student", company: "Universitas Pembangunan UPNVJ", period: "2024 - Present", desc: "Chatbot kesehatan berbasis web untuk konsultasi kebugaran." },
   { id: 3, role: "Anggota KSM Multimedia UPNVJ", company: "KSM Multimedia UPNVJ", period: "2026 - Present", desc: "Mengembangkan keterampilan di bidang multimedia kreatif seperti desain grafis, videografi, dan produksi media digital." },
   { id: 4, role: "Student Code Developer Generations and Optimization", company: "IBM SkillsBuild & Hacktiv8", period: "2025", desc: "Program pelatihan intensif pengembangan web dan pembelajaran konsep dasar optimasi aplikasi." },
+  { id: 5, role: "AI Ignition Training", company: "KUMPUL.ID", period: "2025", desc: "Mengikuti program pelatihan intensif pemanfaatan teknologi kecerdasan buatan (AI) untuk mempercepat solusi inovatif." },
 ];
 
 const services = [
@@ -22,7 +23,7 @@ const services = [
     id: 1,
     title: "Design Grafis",
     description: "Menyediakan solusi visual kreatif untuk kebutuhan digital maupun cetak. Saya merancang desain yang berfokus pada keindahan estetika, keselarasan warna, dan tipografi modern guna menyampaikan pesan secara efektif kepada audiens.",
-    skills: ["Figma", "Affinity", "Branding", "Poster Design", "Social Media Visuals"]
+    skills: ["Figma", "Branding", "Poster Design", "Social Media Visuals"]
   },
   {
     id: 2,
@@ -136,7 +137,7 @@ export default function Home() {
                 </a>
               ))}
               <a
-                href="mailto:fakhryzackyputra@gmail.com"
+                href="mailto:contact@fakhry.my.id"
                 className="text-2xl md:text-4xl font-mono text-gray-500 hover:text-white uppercase tracking-widest pt-10"
               >
                 Let's Talk →
@@ -280,7 +281,7 @@ export default function Home() {
         </div>
 
         <div className="flex justify-center gap-6">
-            <a href="mailto:fakhryzackyputra@gmail.com" className="p-4 border border-gray-800 rounded-full hover:bg-white hover:text-black transition-all">
+            <a href="mailto:contact@fakhry.my.id" className="p-4 border border-gray-800 rounded-full hover:bg-white hover:text-black transition-all">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
             </a>
             <a href="https://www.instagram.com/fakhryzp?igsh=MWN6NHdrbzZkbXBnag%3D%3D&utm_source=qr" target="_blank" className="p-4 border border-gray-800 rounded-full hover:bg-white hover:text-black transition-all">
