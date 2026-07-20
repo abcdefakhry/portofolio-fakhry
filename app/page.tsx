@@ -55,12 +55,14 @@ function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
     >
       <div />
       <div className="flex items-center space-x-6 pointer-events-auto">
-        <a
-          href="/CV_Fakhry.pdf" download
-          className="px-5 py-2 bg-white text-black rounded-full text-[10px] font-black uppercase hover:bg-lime-400 transition-colors"
-        >
-          Download CV
-        </a>
+        {/*
+        // <a
+        //   href="/CV_Fakhry.pdf" download
+        //   className="px-5 py-2 bg-white text-black rounded-full text-[10px] font-black uppercase hover:bg-lime-400 transition-colors"
+        // >
+        //   Download CV
+        // </a>
+        */}
 
         {/* HAMBURGER BUTTON */}
         <button
@@ -151,13 +153,13 @@ export default function Home() {
             Hi, my name is
           </motion.p>
           <div className="overflow-hidden mb-4">
-            <motion.h1 initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ duration: 1, ease: [0.33, 1, 0.68, 1] }} className="text-4xl sm:text-7xl md:text-[7rem] font-medium leading-[0.9] md:leading-[0.85] tracking-tighter uppercase italic">
+            <motion.h1 initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ duration: 1, ease: [0.33, 1, 0.68, 1] }} className="text-4xl sm:text-7xl md:text-[7rem] font-bold leading-[0.9] md:leading-[0.85] tracking-tighter uppercase italic">
               Muhammad Fakhry <br /> <span className="text-gray-600">Zacky Putra</span>
             </motion.h1>
           </div>
 
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }} className="text-sm md:text-lg text-gray-400 max-w-2xl leading-relaxed mt-1">
-            I am an Informatics student at National Development University "Veteran" Jakarta with a strong interest in digital innovation. Currently, I am developing my skills in designing, building, and maintaining user-focused websites and applications, specializing in front-end development and graphic design.
+            I am an Informatics student at UPN Veteran Jakarta with a strong interest in digital innovation. Currently, I am developing my skills in designing, building, and maintaining user-focused websites and applications, specializing in front-end development and graphic design.
           </motion.p>
         </div>
 
