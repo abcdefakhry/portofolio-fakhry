@@ -11,11 +11,11 @@ const projects = [
 ];
 
 const experiences = [
-  { id: 1, role: "Staff EKRAF HMIF UPNVJ", company: "Himpunan Mahasiswa Informatika UPNVJ", period: "2025 - 2026", desc: "Riset pengguna dan perancangan antarmuka proyek organisasi." },
-  { id: 2, role: "Software Engineer Student", company: "Universitas Pembangunan UPNVJ", period: "2024 - Present", desc: "Chatbot kesehatan berbasis web untuk konsultasi kebugaran." },
-  { id: 3, role: "Anggota KSM Multimedia UPNVJ", company: "KSM Multimedia UPNVJ", period: "2026 - Present", desc: "Mengembangkan keterampilan di bidang multimedia kreatif seperti desain grafis, videografi, dan produksi media digital." },
-  { id: 4, role: "Student Code Developer Generations and Optimization", company: "IBM SkillsBuild & Hacktiv8", period: "2025", desc: "Program pelatihan intensif pengembangan web dan pembelajaran konsep dasar optimasi aplikasi." },
-  { id: 5, role: "AI Ignition Training", company: "KUMPUL.ID", period: "2025", desc: "Mengikuti program pelatihan intensif pemanfaatan teknologi kecerdasan buatan (AI) untuk mempercepat solusi inovatif." },
+  { id: 1, role: "Anggota KSM Multimedia UPNVJ", company: "KSM Multimedia UPNVJ", period: "2026 - Present" },
+  { id: 2, role: "Staff EKRAF HMIF UPNVJ", company: "Himpunan Mahasiswa Informatika UPNVJ", period: "2025 - 2026" },
+  { id: 3, role: "AI Ignition Training", company: "KUMPUL.ID", period: "2025" },
+  { id: 4, role: "Student Code Developer Generations and Optimization", company: "IBM SkillsBuild & Hacktiv8", period: "2025" },
+  { id: 5, role: "Software Engineer Student", company: "Universitas Pembangunan UPNVJ", period: "2024 - Present" },
 ];
 
 const techStacks = [
@@ -59,14 +59,20 @@ const services = [
   {
     id: 1,
     title: "Design Grafis",
-    description: "Menyediakan solusi visual kreatif untuk kebutuhan digital maupun cetak. Saya merancang desain yang berfokus pada keindahan estetika, keselarasan warna, dan tipografi modern guna menyampaikan pesan secara efektif kepada audiens.",
+    description: "Fokus pada pembuatan aset visual untuk media digital dan cetak. Menyeimbangkan estetika, hierarki visual, dan tipografi agar pesan utama tersampaikan dengan efektif.",
     skills: ["Figma", "Branding", "Poster Design", "Social Media Visuals"]
   },
   {
     id: 2,
     title: "Front-end Development",
-    description: "Mentransformasikan desain kreatif menjadi antarmuka website yang interaktif, responsif, dan mudah digunakan. Saya fokus menulis kode yang bersih dan terstruktur, mengoptimalkan kecepatan akses, serta menambahkan animasi transisi yang mulus untuk pengalaman pengguna yang menyenangkan.",
+    description: "Merancang tampilan web yang interaktif dan nyaman dipakai. Berfokus pada performa yang cepat, tampilan yang pas di semua ukuran layar, serta animasi halus yang bikin web terasa lebih hidup.",
     skills: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "Framer Motion", "JavaScript", "HTML5 & CSS3"]
+  },
+  {
+    id: 3,
+    title: "Backend Development",
+    description: "Mengembangkan sistem backend yang stabil dan aman. Merancang struktur database yang efisien serta menyediakan koneksi API yang cepat untuk kebutuhan aplikasi.",
+    skills: ["MySQL", "Supabase"]
   }
 ];
 
@@ -197,7 +203,7 @@ export default function Home() {
       <section id="hero" className="relative min-h-dvh md:h-dvh w-full flex flex-col justify-start lg:justify-center pt-[116px] pb-16 lg:py-0">
         <div className="max-w-7xl mx-auto px-6 md:px-8 w-full flex flex-col justify-center">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-            
+
             {/* Left Column: Premium Photo Framer Card */}
             <div className="lg:col-span-4 flex justify-center lg:justify-start order-1 pt-2 lg:pt-0">
               <motion.div
@@ -208,10 +214,10 @@ export default function Home() {
               >
                 {/* 1. Background Blur Glow */}
                 <div className="absolute -inset-4 bg-lime-400/20 rounded-[2.5rem] blur-2xl opacity-60 group-hover:opacity-100 group-hover:scale-105 transition duration-500" />
-                
+
                 {/* 2. Cyber Offset Underlayer Frame */}
                 <div className="absolute inset-0 bg-[#0e0e0e] border border-zinc-800 rounded-3xl transform -rotate-3 group-hover:rotate-0 transition-transform duration-500 ease-[0.22,1,0.36,1]" />
-                
+
                 {/* 3. Outer Glowing Accent Frame */}
                 <div className="absolute inset-0 border border-lime-400/30 rounded-3xl transform rotate-3 group-hover:rotate-0 transition-transform duration-500 ease-[0.22,1,0.36,1] -z-10" />
 
@@ -224,7 +230,7 @@ export default function Home() {
                   />
                   {/* Cyber Grid Pattern Overlay */}
                   <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px] pointer-events-none z-10" />
-                  
+
                   {/* Glowing Vignette Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none z-10" />
 
@@ -274,19 +280,22 @@ export default function Home() {
                   </span>
                 </a>
                 <a
-                  href="#contact"
+                  href="mailto:contact@fakhry.my.id"
                   className="flex-1 sm:flex-initial group relative inline-flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-6 py-2.5 sm:py-3 border border-zinc-850 text-white font-black text-[10px] sm:text-xs uppercase tracking-widest rounded-full overflow-hidden hover:bg-zinc-900 hover:border-zinc-500 transition-all duration-300 text-center whitespace-nowrap"
                 >
                   <span className="relative z-10 flex items-center gap-1.5 sm:gap-2">
                     Contact
                     <svg
-                      className="w-3.5 h-3.5 sm:w-4 sm:h-4 transform group-hover:translate-x-1 transition-transform duration-300"
+                      className="w-3.5 h-3.5 sm:w-4 sm:h-4 transform group-hover:scale-110 transition-transform duration-300"
+                      viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                      <polyline points="22,6 12,13 2,6" />
                     </svg>
                   </span>
                 </a>
