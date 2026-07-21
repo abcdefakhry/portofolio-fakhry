@@ -228,8 +228,7 @@ export default function Home() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700 ease-[0.22,1,0.36,1]"
                     alt="Muhammad Fakhry Zacky Putra"
                   />
-                  {/* Cyber Grid Pattern Overlay */}
-                  <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px] pointer-events-none z-10" />
+
 
                   {/* Glowing Vignette Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none z-10" />
