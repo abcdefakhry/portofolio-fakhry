@@ -243,11 +243,11 @@ export default function Home() {
             </div>
 
             {/* Right Column: Bio Content */}
-            <div className="lg:col-span-8 flex flex-col justify-center order-2 text-left z-10">
+            <div className="lg:col-span-8 flex flex-col items-start justify-center order-2 text-left z-10">
               <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-[12px] font-mono text-lime-400 uppercase tracking-[0.1em] mb-4 md:mb-6">
                 Hi, my name is
               </motion.p>
-              <div className="overflow-hidden mb-4 w-[120%] pr-8">
+              <div className="overflow-hidden mb-4 w-full">
                 <motion.h1 initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ duration: 1, ease: [0.33, 1, 0.68, 1] }} className="text-[2.0rem] sm:text-6xl lg:text-[3.2rem] xl:text-[3.8rem] 2xl:text-[4.8rem] font-bold leading-[1.0] md:leading-[0.95] tracking-tight uppercase italic pr-8">
                   <span className="inline-block whitespace-nowrap pr-6">Muhammad Fakhry</span> <br /> <span className="inline-block text-gray-600 whitespace-nowrap pr-6">Zacky Putra</span>
                 </motion.h1>
@@ -322,7 +322,7 @@ export default function Home() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.25 }}
-        className="min-h-fit flex flex-col justify-center px-6 md:px-8 max-w-7xl mx-auto w-full pt-[72px] pb-16 md:pt-32 md:pb-32"
+        className="min-h-fit flex flex-col justify-center px-6 md:px-8 max-w-7xl mx-auto w-full pt-[73px] pb-16 md:pt-32 md:pb-32"
       >
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
             <div className="md:col-span-4">
