@@ -346,6 +346,40 @@ export default function Home() {
         </div>
       </motion.section>
 
+      {/* SECTION 3: CAPABILITIES */}
+      <motion.section
+        id="capabilities"
+        variants={revealVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.25 }}
+        className="min-h-fit flex flex-col justify-center px-6 md:px-8 max-w-7xl mx-auto w-full py-16 md:py-32"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
+          <div className="md:col-span-4">
+            <div className="w-fit">
+              <h2 className="text-3xl md:text-5xl font-bold tracking-tighter italic uppercase text-white leading-none">Capabilities</h2>
+              <div className="w-full h-[3px] bg-lime-400 mt-4 rounded-full" />
+            </div>
+          </div>
+          <div className="md:col-span-8 flex flex-col gap-2">
+            {services.map((s) => (
+              <div key={s.id} className="border-b border-gray-900 pb-10 pt-10 first:pt-0 flex flex-col gap-4">
+                <h3 className="text-2xl md:text-3xl font-medium text-white uppercase">{s.title}</h3>
+                <p className="text-gray-400 text-sm md:text-base leading-relaxed max-w-2xl text-justify">{s.description}</p>
+                <div className="flex flex-wrap gap-2 mt-2">
+                  {s.skills?.map((skill, index) => (
+                    <span key={index} className="text-[9px] font-mono bg-zinc-900 border border-zinc-800 text-lime-400 px-3 py-1 rounded-full uppercase tracking-wider">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </motion.section>
+
       {/* SECTION 2.5: TECH STACK */}
       <motion.section
         id="techstack"
@@ -384,40 +418,6 @@ export default function Home() {
                         {item.name}
                       </span>
                     </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </motion.section>
-
-      {/* SECTION 3: CAPABILITIES */}
-      <motion.section
-        id="capabilities"
-        variants={revealVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.25 }}
-        className="min-h-fit flex flex-col justify-center px-6 md:px-8 max-w-7xl mx-auto w-full py-16 md:py-32"
-      >
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
-          <div className="md:col-span-4">
-            <div className="w-fit">
-              <h2 className="text-3xl md:text-5xl font-bold tracking-tighter italic uppercase text-white leading-none">Capabilities</h2>
-              <div className="w-full h-[3px] bg-lime-400 mt-4 rounded-full" />
-            </div>
-          </div>
-          <div className="md:col-span-8 flex flex-col gap-2">
-            {services.map((s) => (
-              <div key={s.id} className="border-b border-gray-900 pb-10 pt-10 first:pt-0 flex flex-col gap-4">
-                <h3 className="text-2xl md:text-3xl font-medium text-white uppercase">{s.title}</h3>
-                <p className="text-gray-400 text-sm md:text-base leading-relaxed max-w-2xl text-justify">{s.description}</p>
-                <div className="flex flex-wrap gap-2 mt-2">
-                  {s.skills?.map((skill, index) => (
-                    <span key={index} className="text-[9px] font-mono bg-zinc-900 border border-zinc-800 text-lime-400 px-3 py-1 rounded-full uppercase tracking-wider">
-                      {skill}
-                    </span>
                   ))}
                 </div>
               </div>
