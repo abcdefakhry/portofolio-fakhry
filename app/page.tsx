@@ -154,8 +154,8 @@ export default function Home() {
             Hi, my name is
           </motion.p>
           <div className="overflow-hidden mb-4">
-            <motion.h1 initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ duration: 1, ease: [0.33, 1, 0.68, 1] }} className="text-4xl sm:text-7xl md:text-[7rem] font-bold leading-[0.9] md:leading-[0.85] tracking-tighter uppercase italic">
-              Muhammad Fakhry <br /> <span className="text-gray-600">Zacky Putra</span>
+            <motion.h1 initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ duration: 1, ease: [0.33, 1, 0.68, 1] }} className="text-[2.0rem] sm:text-6xl md:text-[7rem] font-bold leading-[1.0] md:leading-[0.95] tracking-tight uppercase italic">
+              <span className="whitespace-nowrap">Muhammad Fakhry</span> <br /> <span className="text-gray-600 whitespace-nowrap">Zacky Putra</span>
             </motion.h1>
           </div>
 
